@@ -1,0 +1,5 @@
+<launch>
+    <rosparam param="/rosout/log_level">debug</rosparam>
+    <node pkg="mdd3a" type="mdd3a_node.py" name="mdd3a_node" output="screen"></node>
+    <node pkg="mdd3a" type="mdd3a_debug_node.py" name="motor_debug_publisher" output="screen"></node>
+</launch>
