@@ -21,13 +21,13 @@ def setup_mdd3a():
 
     # Set up the GPIO channels
     GPIO.setup(12,GPIO.OUT) # Left Motor A
-    GPIO.setup(13,GPIO.OUT) # Left Motor B
+    GPIO.setup(6,GPIO.OUT) # Left Motor B   changed from 13 to 6 as pin 13 is broken
     GPIO.setup(18,GPIO.OUT) # Right Motor A
     GPIO.setup(19,GPIO.OUT) # Right Motor B
 
     # Set up the PWM channels
     left_motor_a = GPIO.PWM(12, 500)
-    left_motor_b = GPIO.PWM(13, 500)
+    left_motor_b = GPIO.PWM(6, 500)
     right_motor_a = GPIO.PWM(18, 500)
     right_motor_b = GPIO.PWM(19, 500)
 
