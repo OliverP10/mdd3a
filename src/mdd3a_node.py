@@ -39,7 +39,7 @@ def setup_mdd3a():
 
     rospy.loginfo("MDD3A Setup Complete")
 
-def set_motor_speeds(data):
+def set_motor_speeds(data: Motor):
     global motor_status
     motor_status = data
 
